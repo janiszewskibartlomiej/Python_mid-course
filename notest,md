@@ -10,3 +10,7 @@ natomiast trzeba po stworzeniu w klasie anbstrakcyjnej rzucuc wyjatek aby nie by
     def giveVoice(self):
         raise NotImplementedError()
         
+
+
+
+```
