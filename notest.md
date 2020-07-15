@@ -11,7 +11,8 @@ natomiast trzeba po stworzeniu w klasie anbstrakcyjnej rzucuc wyjatek aby nie by
         raise NotImplementedError()
         
 2. dziedziczenie wielokrotne > po paru klasach
-trzeba projektowac tak aby to bylo zgodne z live czyli np mamy zachowania kaczki >> kaczka  oraz toy >> kaczka toy ktora bedzie dziedzicyc po toy i kaczka. wazne jest wydzielenie 
+trzeba projektowac tak aby to bylo zgodne z live czyli np mamy zachowania kaczki >> kaczka  oraz toy >> kaczka toy ktora bedzie dziedzicyc po toy i kaczka. 
+wazne jest wydzielenie 
 niektorych konstruktorow lub metod do innej klasy np abstrakcyjnej
 
 3. poliformizm - pozwal urzyc tej samej metody nie zaleznie od typu.
@@ -27,5 +28,36 @@ for obiekt in lista:
         obiekt.say()
         obiekt.fly()
 
-drugi sposob to obsluga wyjatków except AttributeeError - jest lepszym podejsciem jak chcemy sprawdic wiele metod na różnych obiektach, bo obslugujemy wszytsko jedym wyjatkiem
+drugi sposob to obsluga wyjatków except AttributeeError - jest lepszym podejsciem jak chcemy sprawdic wiele metod na różnych obiektach, 
+bo obslugujemy wszytsko jedym wyjatkiem.
+
+4. podsumowanie dev object
+to styl programowania oparty na paradygmatach
+- abstrakcja (cos ogulnego - obiekt) np
+   liczba naturalna = 5
+   dowolny element zbioru liczb naturalnych
+   zbiór liczb naturalnych
+   > największą anstrakcją w tym przykłądzie biędzie zbiór rzeczywistych
+   > zbiór w ogólnie (kolejne poziomy abstrakcji)
+- Enkapsulacja
+  ukrywanie pewnych danych, ukrywanie imlementacji, rodzajem hermetyzacji jest __zmienna niby protected
+- przejmowaniu cech klasy bazowej przez klasy pochodne
+- poliformiz - operowanie na wielu obiektach w ten sam sposob
+
+5. dekoratory
+class Liczby:
+   @staticmethods    >> w takim wypadku nie potrzebujemy obiektu czyli selfa / instancji
+   def nazwa():
+ pozwala to na odwołanie sie bezpośrednio do metody bez instancji klasy nie trzeba tworzyc obiektu czyli wywołujem Liczby.nazwa  a nie Liczby().nazwa
+
+drugi przykład to:
+
+@classmethod
+    def printInformationAboutMe(cls):
+        print("Jestem klasową metodą")
+        print("wywołaną na rzecz klasy", cls.__name__)
+        
+   To jest metoda klasowa - z cls - do niej mamy dostep bez instancji jak @staticmethods  czyli Liczby.printInformationAboutMe()
+   
+   w cls mozemy odwolac się np do nazwy klasy cls.__name__  dostaniemy 'Liczby'
 ```
