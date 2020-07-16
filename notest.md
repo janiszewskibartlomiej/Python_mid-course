@@ -41,7 +41,7 @@ to styl programowania oparty na paradygmatach
    > zbiór w ogólnie (kolejne poziomy abstrakcji)
 - Enkapsulacja
   ukrywanie pewnych danych, ukrywanie imlementacji, rodzajem hermetyzacji jest __zmienna niby protected
-- przejmowaniu cech klasy bazowej przez klasy pochodne
+- Dziedziczenie - przejmowaniu cech klasy bazowej przez klasy pochodne
 - poliformiz - operowanie na wielu obiektach w ten sam sposob
 
 5. dekoratory
