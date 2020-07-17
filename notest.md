@@ -101,5 +101,12 @@ drugi przykład to:
         cls.howManyCars += 1
         
     W takim wypadku tworzenie obiektu jest troche inne ponieważ musimy podac nazwe cls >> samochod1 = Car(Car,"inna")
+    
+    
+    POLA KLASOWE BARDZO PRZYDATNE ABY GRUPOWAC DANE WZGLEDEM WSZYSTKICH OBIEKTOW
+    
+    
+    
+    
    
 ```
