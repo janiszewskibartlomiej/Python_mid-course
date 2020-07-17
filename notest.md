@@ -125,4 +125,6 @@ drugi przykład to:
             self.__a = 0
         else:
             self.__a = value
+            
+    mozeby rowniez ustawic property na def a  >> w takim wypadku jak ktos przypisze Obiekt().a = -11 to utuchomi metode a a nie bedzie to przypisanei do pola statycznego
 ```
