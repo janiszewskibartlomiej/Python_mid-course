@@ -105,8 +105,24 @@ drugi przykład to:
     
     POLA KLASOWE BARDZO PRZYDATNE ABY GRUPOWAC DANE WZGLEDEM WSZYSTKICH OBIEKTOW
     
+  obiekt = Foo()  >> obiekt
+  obiekt.pole = 5   >> zmienna statyczna instncyjna/obiektu Foo()
     
     
-    
+   #### 6. setery i getery
    
+       def __init__(self):
+        self.__a = 5   >> ustawiamy na protected dzieki temu nikt w latwy sposob nie bedzie mial dostepu do tej zmiennej. Wtedy powinismy ustawic get do pobierania i 
+        wykonujemy to z @property   a modyfikacje wszelkie na zmiennej  robimy metoda @get_a.setter
+
+    @property
+    def get_a(self):
+        return self.__a
+
+    @get_a.setter
+    def set_a(self,value):
+        if value < 0:
+            self.__a = 0
+        else:
+            self.__a = value
 ```
