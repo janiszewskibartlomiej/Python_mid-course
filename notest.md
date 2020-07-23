@@ -130,5 +130,49 @@ drugi przykład to:
     
     #### 7. zmienne globalne i nielokalne
     
+    naezy pamietac ze funkcje ajak i klasy mozna w sobie zagniezdzac.
     
+    def f(x):
+    print("Funkcja f")
+    def g(y):
+        
+        x = 7   >> zmienna lokakna dlatego nie jest dostepna dla print(x)
+        print("Dostałem", y)
+        print(x) >> 3
+    x += 1
+    g(x)
+    print(x)
+    
+    f(2)
+-------------
+x = 3   >> zmienna globalna
+
+def f():
+    global x  >> odwolanie do zmiennej globalnej
+    x = 2
+    print(x)
+    
+f() # dostaniemy 2
+print(x)
+mamy efekt przeslaniania nazw i jezeli chcemy zmienic x globalny na 2 trzeba w funkcji podac ze chodzi nam o x ktory istnije >> global x  wtedy print(x) >> 2
+slowo global mowi ze jest w pierwszej lini dstepne a nie we wcieciu. >> bez zagniezdzien
+
+nonlocal sprawdza zmienne w bloku nad wywolaniem
+
+
+zmienna = 10
+def a():
+    zmienna = 11
+    def b():
+        nonlocal zmienna  >> zmieniamy 11 na 12
+        
+        3 jezeli chcemy zmienic zmienna (10)  na 12 musimy napisac global zmienna 
+        zmienna = 12
+    b()
+    print(zmienna)
+
+a()
+print(zmienna)
+
+
 ```
