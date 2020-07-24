@@ -175,4 +175,54 @@ a()
 print(zmienna)
 
 
+#### 8. zamiana zmiennych:
+
+a = 3
+b = 5
+
+#najlepszy sposób
+
+a, b = b, a
+
+
+print("a:",a,"oraz b:",b)
+
+#### 9 True == 1 == 1.0 :
+
+slownik = {True: 'a', 1: 'b', 1.0: 'c'}
+print(slownik)
+
+#### 10 kopiowanie list, tupli, slownikow:
+
+x = [1,2,3]
+y = list(x) >> ten sposób utworzymy nowa na podstawie x   jak zrobimy y = x to tworzymy jedynie polaczenie [twozymy wskaznik do tej samej zmiennej] 
+do x i jak cos zmienimy w x to bedzie w y 
+x.append(4)
+print(y)
+
+przy obiektach  musimy:
+
+import copy
+
+class MyClass:
+    def __init__(self):
+        self.a = 0
+
+obiekt = MyClass()
+obiekt2 = copy.copy(obiekt)   >> w ten sposub tworzymy kopie niezalezne od 1 obiektu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
