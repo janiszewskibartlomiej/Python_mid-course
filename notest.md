@@ -211,9 +211,12 @@ class MyClass:
 obiekt = MyClass()
 obiekt2 = copy.copy(obiekt)   >> w ten sposub tworzymy kopie niezalezne od 1 obiektu
 
+#### 11 NONE object
 
+# if x is not None:
+#     print(x)
 
-
+jak nie podamy jakiejś wartości to dostaniemy zawsze None
 
 
 
