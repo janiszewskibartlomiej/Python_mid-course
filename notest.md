@@ -218,11 +218,23 @@ obiekt2 = copy.copy(obiekt)   >> w ten sposub tworzymy kopie niezalezne od 1 obi
 
 jak nie podamy jakiejś wartości to dostaniemy zawsze None
 
+#### 12 wyrażenia listowe
 
+Powielienie pewnych kolejcji jest mozliwe do wykonania za pomoca mnożenia dla wartosci powtarzajacych sie
 
+lista2 = [10]*10
+print(lista2)
 
+#lista = [wyrażenie for element in kolekcja]
 
+lista4 = [litera for litera in "Jakiś napis"]
+print(lista4)
 
+lista5 = [int(znak) for znak in "0123456"]
+print(lista5)
+
+x, y = [int(liczba) for liczba in input("Podaj dwie liczby: ").split()]
+print(x*y)
 
 
 
