@@ -236,8 +236,15 @@ print(lista5)
 x, y = [int(liczba) for liczba in input("Podaj dwie liczby: ").split()]
 print(x*y)
 
+lista3 = [x * y for (x, y) in ([1, 2], [3, 4])]
+print(lista3)
 
+lista4 = [[x * y, (x + 1) * (y + 1)] * 3 for x, y in ([a, a + 1] for a in range(5))]
+print("lista4:", lista4)
 
+#lista = [wyrażenie for element in kolekcja if warunek]
 
+parzyste = [x*x for x in range(11) if x % 2 == 0]
+print(parzyste)
 
 ```
