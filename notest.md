@@ -247,4 +247,11 @@ print("lista4:", lista4)
 parzyste = [x*x for x in range(11) if x % 2 == 0]
 print(parzyste)
 
+#### inne:
+
+person1, preson2, person3 = "bob", "joe", "merinda"
+
+x = "print(5*5)"
+exec(x)
+
 ```
