@@ -272,8 +272,8 @@ f = open("links.csv", "r")
     f.read()
     print(f.tell())   >> pozycja kursora po odczytaniu znakow
     
-x = f.seek(0,0)
-x.read()
+f.seek(0,0)
+f.read()
     
  
 
