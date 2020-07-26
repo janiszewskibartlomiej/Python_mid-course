@@ -265,5 +265,7 @@ X = "print(5+5)"
 print(dir(X)) 
 help(X.upper) 
  
+File = open("test.txt", "w") 
+File.write(File.read())
 
 ```
