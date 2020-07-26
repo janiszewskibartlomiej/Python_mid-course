@@ -254,4 +254,8 @@ person1, preson2, person3 = "bob", "joe", "merinda"
 x = "print(5*5)"
 exec(x)
 
+X = "5+5"
+print(eval(X)) 
+#10
+
 ```
