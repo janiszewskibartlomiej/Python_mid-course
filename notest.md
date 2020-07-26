@@ -256,10 +256,14 @@ exec(x)
 
 X = "5+5"
 print(eval(X)) 
-#10
+
 
 X = "print(5+5)"
 eval(X)
-#10
+
+X = "print(5+5)"
+print(dir(X)) 
+help(X.upper) 
+ 
 
 ```
