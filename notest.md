@@ -247,7 +247,7 @@ print("lista4:", lista4)
 parzyste = [x*x for x in range(11) if x % 2 == 0]
 print(parzyste)
 
-#### inne:
+#### 13 inne:
 
 person1, preson2, person3 = "bob", "joe", "merinda"
 
@@ -275,7 +275,7 @@ f = open("links.csv", "r")
 f.seek(0,0)
 f.read()
     
- #### 13 lambda
+ #### 14 lambda
  
  Ważna funkcjonalność to domknięcia:
  
@@ -291,5 +291,17 @@ print(f(11))
 
  lista = sorted(range(-3, 12), key=lambda x: x ** 2)
 print(lista)
+
+#### 15. Funkcje:
+
+parametry domyślne powinny być jko ostatnie w funkcji np  def dodaj(a, b=0)
+
+można zadeklarować jaki typ ma być przyjmowany i jaki zwracany
+
+def dodaj(a: int = 0, b: int = 0) -> str:
+    return str(a + b)
+
+
+
 
 ```
