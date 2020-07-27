@@ -275,6 +275,21 @@ f = open("links.csv", "r")
 f.seek(0,0)
 f.read()
     
+ #### 13 lambda
  
+ Ważna funkcjonalność to domknięcia:
+ 
+ def make_incrementor(n):
+    return lambda x: x + n
+
+
+f = make_incrementor(100)
+print(f(11))
+ ----
+ 
+ print((lambda a, b: a ** 3 + 3 * a - b ** 2)(10, 20))
+
+ lista = sorted(range(-3, 12), key=lambda x: x ** 2)
+print(lista)
 
 ```
