@@ -328,7 +328,7 @@ funkcjaUpper = generatorFunkcji(False, True)
 
 print(funkcjaUpper("abc", 5))
 
-16. obiekt wywolany
+16. obiekt wywolany __call__
 
 jak stworzymy dany obiekt i mam w nim __call__ to bedzie wywolany przy prubie zmiany parametru inicjalizacji obiektu np 
 
