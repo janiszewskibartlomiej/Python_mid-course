@@ -345,6 +345,6 @@ class Func:
             return self.value
 
 liczba = Func(3)
-print(liczba(5))
+print(liczba(5))    to jest to samo jak print(liczba__call__(5))
 
 ```
