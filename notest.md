@@ -109,7 +109,7 @@ drugi przykład to:
   obiekt.pole = 5   >> zmienna statyczna instncyjna/obiektu Foo()
     
     
-   #### 6. setery i getery
+   6. setery i getery
    
        def __init__(self):
         self.__a = 5   >> ustawiamy na protected dzieki temu nikt w latwy sposob nie bedzie mial dostepu do tej zmiennej. Wtedy powinismy ustawic get do pobierania i 
@@ -128,7 +128,7 @@ drugi przykład to:
             
     mozeby rowniez ustawic property na def a  >> w takim wypadku jak ktos przypisze Obiekt().a = -11 to utuchomi metode a a nie bedzie to przypisanei do pola statycznego
     
-    #### 7. zmienne globalne i nielokalne
+    7. zmienne globalne i nielokalne
     
     naezy pamietac ze funkcje ajak i klasy mozna w sobie zagniezdzac.
     
@@ -175,7 +175,7 @@ a()
 print(zmienna)
 
 
-#### 8. zamiana zmiennych:
+8. zamiana zmiennych:
 
 a = 3
 b = 5
@@ -187,12 +187,12 @@ a, b = b, a
 
 print("a:",a,"oraz b:",b)
 
-#### 9 True == 1 == 1.0 :
+9 True == 1 == 1.0 :
 
 slownik = {True: 'a', 1: 'b', 1.0: 'c'}
 print(slownik)
 
-#### 10 kopiowanie list, tupli, slownikow:
+10 kopiowanie list, tupli, slownikow:
 
 x = [1,2,3]
 y = list(x) >> ten sposób utworzymy nowa na podstawie x   jak zrobimy y = x to tworzymy jedynie polaczenie [twozymy wskaznik do tej samej zmiennej] 
@@ -211,14 +211,14 @@ class MyClass:
 obiekt = MyClass()
 obiekt2 = copy.copy(obiekt)   >> w ten sposub tworzymy kopie niezalezne od 1 obiektu
 
-#### 11 NONE object
+11 NONE object
 
 # if x is not None:
 #     print(x)
 
 jak nie podamy jakiejś wartości to dostaniemy zawsze None
 
-#### 12 wyrażenia listowe
+12 wyrażenia listowe
 
 Powielienie pewnych kolejcji jest mozliwe do wykonania za pomoca mnożenia dla wartosci powtarzajacych sie
 
@@ -247,7 +247,7 @@ print("lista4:", lista4)
 parzyste = [x*x for x in range(11) if x % 2 == 0]
 print(parzyste)
 
-#### 13 inne:
+13 inne:
 
 person1, preson2, person3 = "bob", "joe", "merinda"
 
@@ -275,7 +275,7 @@ f = open("links.csv", "r")
 f.seek(0,0)
 f.read()
     
- #### 14 lambda
+14 lambda
  
  Ważna funkcjonalność to domknięcia:
  
@@ -292,7 +292,7 @@ print(f(11))
  lista = sorted(range(-3, 12), key=lambda x: x ** 2)
 print(lista)
 
-#### 15. Funkcje:
+15. Funkcje:
 
 parametry domyślne powinny być jko ostatnie w funkcji np  def dodaj(a, b=0)
 
