@@ -301,6 +301,32 @@ można zadeklarować jaki typ ma być przyjmowany i jaki zwracany
 def dodaj(a: int = 0, b: int = 0) -> str:
     return str(a + b)
 
+funkcja jest obiektem bo np print(dodaj.__name__)
+
+funkce mozemy zagnierzadzac w sobie jak metody w klasie, natomiast wywolanie nei jest dla nie tak przejrzyste.
+
+def generatorFunkcji(bezZmian, czyUpper):
+    def powielTekst(text, ileRazyPowtorzyc=1):
+        return text * ileRazyPowtorzyc
+
+    def powielTekstUpper(text: str, ileRazyPowtorzyc=1):
+        return text.upper() * ileRazyPowtorzyc
+
+    def powielTekstLower(text: str, ileRazyPowtorzyc=1):
+        return text.lower() * ileRazyPowtorzyc
+
+    if bezZmian:
+        return powielTekst
+    else:
+        if czyUpper:
+            return powielTekstUpper
+        else:
+            return powielTekstLower
+
+
+funkcjaUpper = generatorFunkcji(False, True)
+
+print(funkcjaUpper("abc", 5))
 
 
 
