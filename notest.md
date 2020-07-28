@@ -328,6 +328,23 @@ funkcjaUpper = generatorFunkcji(False, True)
 
 print(funkcjaUpper("abc", 5))
 
+16. obiekt wywolany
 
+jak stworzymy dany obiekt i mam w nim __call__ to bedzie wywolany przy prubie zmiany parametru inicjalizacji obiektu np 
+
+class Func:
+    def __init__(self,value):
+        self.value = value
+
+    def __call__(self, times):
+        if type(self.value) == int:
+            return self.value * times
+        elif type(self.value) == str:
+            return self.value.upper() * times
+        else:
+            return self.value
+
+liczba = Func(3)
+print(liczba(5))
 
 ```
