@@ -382,8 +382,8 @@ standardowo porownywanie obiektow kozysta z metody __eq__ ktora mozemy napdissac
  
  == wywoluje >> __eq__  #obiekt1 == obiekt1 >>>to jest >>> obiekt1.__eq__(obiekt2)
  
- 
+ __repr__  zwraca techniczne informacje o obiekcie - sluzy do bardziej technicznych prezentacji
 
-
+__str__ ustawiamy w tej metodzie co ma zwrucic pront od odbiektu
 
 ```
