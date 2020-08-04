@@ -347,4 +347,43 @@ class Func:
 liczba = Func(3)
 print(liczba(5))    to jest to samo jak print(liczba__call__(5))
 
+17. metody specjalne:
+
+lista1 = [1,2,3]
+lista2 = [1,2,3]
+
+lista3 = lista1
+lista3.append(4)
+
+print(lista1 is lista3)  #True poniewaz lista3 = lista1   to jest tak naprawde lista3 wskazuje na liste1 - mamy polaczenei do pamieci a nie nowy obiekt
+
+mozemy to ominac poprzez lista3 = lista1[:]  lub skorzystanei z biblioteki copy
+
+class Obiekt:
+    def __init__(self, value1, value2):
+        self.value1 = value1
+        self.value2 = value2
+
+
+
+obiekt1 = Obiekt(1, 2)
+obiekt2 = Obiekt(1, 2)
+
+print()
+print(obiekt1 == obiekt2)  zwruci False
+
+obiekty porownywujemy operatorem is
+
+standardowo porownywanie obiektow kozysta z metody __eq__ ktora mozemy napdissac aby w inny sposob porownywać >> 
+    def __eq__(self, other):
+        return self.value1 == other.value1 and self.value2 == other.value2
+        
+ w tym wypadku python bedzie wiedzial jak porownac obiekty poprzez '==' i w tym wypadku print(obiekt1 == obiekt2) #True
+ 
+ == wywoluje >> __eq__  #obiekt1 == obiekt1 >>>to jest >>> obiekt1.__eq__(obiekt2)
+ 
+ 
+
+
+
 ```
