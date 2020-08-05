@@ -386,4 +386,21 @@ standardowo porownywanie obiektow kozysta z metody __eq__ ktora mozemy napdissac
 
 __str__ ustawiamy w tej metodzie co ma zwrucic pront od odbiektu
 
+18. przeciarzenie operatorow czyli nadpisywanie metod wbudowanych:
+
+    def __str__(self):
+        return f"{self.hours}h {self.minutes}m {self.seconds}s"
+
+    def __eq__(self, other):
+        return self.hours == other.hours and self.minutes == other.minutes and self.seconds == other.seconds
+
+    def __add__(self, other):
+        zegarek = Clock(self.hours,self.minutes,self.seconds)
+        zegarek.addTime(other.hours, other.minutes, other.seconds)
+        return zegarek
+
+
+
+
+
 ```
