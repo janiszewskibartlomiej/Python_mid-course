@@ -399,7 +399,16 @@ __str__ ustawiamy w tej metodzie co ma zwrucic pront od odbiektu
         zegarek.addTime(other.hours, other.minutes, other.seconds)
         return zegarek
 
+    def __radd__(self, other):   #  ksiazka1 = Book("abc","dbe",123) ksiazka2 = Book("xyz","zyx",987) ksiazka3 = Book("eee","aaa",333) lista = [ksiazka1,ksiazka2,ksiazka3] print(sum(lista))
+        if isinstance(other,Book):
+            return self.pages + other.pages
+        else:
+            return self.pages + other
 
+    def __lt__(self, other):   #  ksiazka1 < ksiazka2:
+        if self.pages < other.pages:
+            return True
+        return False
 
 
 
