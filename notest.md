@@ -410,6 +410,25 @@ __str__ ustawiamy w tej metodzie co ma zwrucic pront od odbiektu
             return True
         return False
 
+19 zapisywanie obiektow do pliku
+
+import pickle as pick
+
+zegarek1 = Clock(10,11,12)
 
 
+    with open("Zegarek.objc",'wb') as file:
+        pick.dump(zegarek1,file)
+
+with open("Zegarek.objc",'rb') as file_pi:
+    zegarek = pick.load(file_pi)
+    
+    
+    
+    
+    
+    
+    
+    
+    
 ```
