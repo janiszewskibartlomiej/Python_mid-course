@@ -417,8 +417,11 @@ import pickle as pick
 zegarek1 = Clock(10,11,12)
 
 
+try:
     with open("Zegarek.objc",'wb') as file:
         pick.dump(zegarek1,file)
+except IOError:
+    print("Nie można było utworzyć pliku na dysku")
 
 with open("Zegarek.objc",'rb') as file_pi:
     zegarek = pick.load(file_pi)
