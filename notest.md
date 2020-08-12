@@ -427,7 +427,19 @@ with open("Zegarek.objc",'rb') as file_pi:
     zegarek = pick.load(file_pi)
     
     
-    
+20 unikanie tzw magicznych liczb >> lepiej liczby wydzieli do np stałych w łąściwą nazwą wtedy wiemy co i jak:
+
+NORMAL_RESOLUTION = 600
+RESOLUTION_X = 600
+RESOLUTION_Y = 600
+START_MOUSE_POSITION = -1
+SIZE_BOARD = 9
+
+window = sf.RenderWindow(sf.VideoMode(RESOLUTION_X,RESOLUTION_Y),"Kółko i krzyżyk")
+
+21. Asercje
+
+
     
     
     
