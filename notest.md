@@ -439,8 +439,9 @@ window = sf.RenderWindow(sf.VideoMode(RESOLUTION_X,RESOLUTION_Y),"Kółko i krzy
 
 21. Asercje
 
+assert jest bardzo wazna poniewaz progrm wywwali sie w miejscu assercji i dostajemy info czemu si ewywalił
 
-    
+   assert 1/(a/b) + 1 >= 0 
     
     
     
