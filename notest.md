@@ -443,7 +443,11 @@ assert jest bardzo wazna poniewaz progrm wywwali sie w miejscu assercji i dostaj
 
    assert 1/(a/b) + 1 >= 0 
     
-    
+22. else >> mozna używać w petlach > for i while nie ma przeszód na to
+
+23. import turtle 
+
+
     
     
     
