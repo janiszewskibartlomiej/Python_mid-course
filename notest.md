@@ -529,7 +529,7 @@ window.mainloop()
   wywołanie dokumentcji >> print(funkcja.__doc__)
   
   
- 25. prezentacja danch matplotlib;
+ 25. prezentacja danch poprzez matplotlib  -- mozemy sprawdzic porawnosc danych na wykresach
  
 import pylab
 import math
