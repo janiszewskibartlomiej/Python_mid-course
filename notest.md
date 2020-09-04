@@ -543,6 +543,8 @@ for i in range(100):
 pylab.plot(listaX,listaY,'go')
 pylab.show()
  
+ 26 unittest:
  
+ tworznie szablonu testu mozn awykonac poprzez najechanie na metode/fukcje + prawy przycisk myszy >> go to >> test
 
 ```
