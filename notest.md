@@ -514,5 +514,23 @@ t.Button(window, text="OK", command=getValues).pack(side=t.LEFT)
 t.Button(window, text="CLOSE", command=closeWindow).pack(side=t.RIGHT)
 
 window.mainloop()
+  
+24. documentation in function or methods:
+
+ jezeli pierwsza linijka wewnatrz metody lub funcji jest doc stringiem to jest to traktowane jako dokumentacja, np:
+ 
+ def funkcja(a,b,c):
+    """Funkcja funkcja przyjmuje trzy liczby całkowite i zwraca ich sumę
+    dalej
+    kolejne linie dokumentacji
+    """
+    return a+b+c
+  
+  wywołanie dokumentcji >> print(funkcja.__doc__)
+  
+  
     
+ 
+ 
+
 ```
